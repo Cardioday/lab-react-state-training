@@ -14,11 +14,13 @@ function Counter() {
         }
     }
 
-    return <div>
-        <button onClick={countDown}>-</button>
+    return ( 
+    <div>
+        <button onClick={() => {countDown()}}>-</button>
         <span> {counter} </span>
-        <button onClick={countUp}>+</button>
+        <button onClick={() => {countUp()}}>+</button>
     </div>
+    )
 }
 
 export default Counter;
